@@ -1,13 +1,10 @@
 package ch.heigvd.dai;
 
-import ch.heigvd.dai.commands.Goodbye;
-import ch.heigvd.dai.commands.Hello;
 import java.io.File;
 import picocli.CommandLine;
 
 @CommandLine.Command(description = "A small CLI with subcommands to demonstrate picocli.", version = "1.0.0", subcommands = {
-    Hello.class,
-    Goodbye.class,
+    // ADD commands
 }, scope = CommandLine.ScopeType.INHERIT, mixinStandardHelpOptions = true)
 public class Main {
 
